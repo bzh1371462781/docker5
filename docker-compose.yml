@@ -1,7 +1,7 @@
 version: "3"
 services:
-  asm_unicom:
-    container_name: asm_unicom
+  docker5_unicom:
+    container_name: docker5_unicom
     build:
       context: ./
       dockerfile: docker/Dockerfile
@@ -10,7 +10,7 @@ services:
     restart: always
     tty: true
     network_mode: "bridge"
-    hostname: asm_unicom
+    hostname: docker5_unicom
     environment:
       - enable_unicom=true
 
