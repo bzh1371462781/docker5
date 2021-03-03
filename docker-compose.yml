@@ -6,24 +6,11 @@ services:
       context: ./
       dockerfile: docker/Dockerfile
     volumes:
-      - ./config/config1:/AutoSignMachine/scripts/config #同步脚本地址
-    restart: always
-    tty: true
-    network_mode: "bridge"
-    hostname: asm_unicom
-    environment:
-      - enable_unicom=true
-  asm_unicom2:
-    container_name: asm_unicom2
-    build:
-      context: ./
-      dockerfile: docker/Dockerfile
-    volumes:
       - ./config:/AutoSignMachine/scripts/config #同步脚本地址
     restart: always
     tty: true
     network_mode: "bridge"
-    hostname: asm_unicom2
+    hostname: asm_unicom
     environment:
       - enable_unicom=true
 
