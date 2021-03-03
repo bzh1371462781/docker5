@@ -1,5 +1,5 @@
 FROM node:lts-alpine
-LABEL maintainer="bzh1371462781 <imclamp@foxmail.com>"
+LABEL maintainer="1371462781 <imclamp@foxmail.com>"
 ARG ASM_SCRIPTS_URL=https://github.com.cnpmjs.org/bzh1371462781/docker6
 ARG ASM_SCRIPTS_BRANCH=main
 ARG ASM_WRAPPER_URL=https://github.com.cnpmjs.org/bzh1371462781/docker5
