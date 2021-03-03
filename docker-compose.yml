@@ -1,16 +1,14 @@
 version: "3"
 services:
+  # 如果需要多账号并发请求，可以新建一行asm_unicom 然后拷贝asm_unicom下面的代码，并修改container_name,hostname方便管理
   asm_unicom:
+    image: xclamp/asm-wrapper:unicom
     container_name: asm_unicom
-    build:
-      context: ./
-      dockerfile: docker/Dockerfile
-    volumes:
-      - ./config:/AutoSignMachine/scripts/config #同步脚本地址
     restart: always
     tty: true
     network_mode: "bridge"
     hostname: asm_unicom
+    volumes:
+      - ./config:/AutoSignMachine/scripts/config #同步脚本地址
     environment:
-      - enable_unicom=true
-
+      - enable_unicom=true #签到开关 false / true
