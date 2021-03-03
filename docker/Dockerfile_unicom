@@ -1,5 +1,5 @@
 FROM node:lts-alpine
-LABEL maintainer="clamp <imclamp@foxmail.com>"
+LABEL maintainer="bzh1371462781 <imclamp@foxmail.com>"
 ARG ASM_SCRIPTS_URL=https://github.com.cnpmjs.org/DJ-clamp/bandersnatch
 ARG ASM_SCRIPTS_BRANCH=azmodan
 ARG ASM_WRAPPER_URL=https://github.com.cnpmjs.org/DJ-clamp/asm-wrapper
