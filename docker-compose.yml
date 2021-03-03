@@ -19,7 +19,7 @@ services:
       context: ./
       dockerfile: docker/Dockerfile
     volumes:
-      - ./config/config2:/AutoSignMachine/scripts/config #同步脚本地址
+      - ./config:/AutoSignMachine/scripts/config #同步脚本地址
     restart: always
     tty: true
     network_mode: "bridge"
