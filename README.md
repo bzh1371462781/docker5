@@ -14,7 +14,7 @@
 
   2.任意目录下创建一个新文件夹,执行命令
 
-`wget --no-check-certificate https://raw.githubusercontent.com/DJ-clamp/asm-wrapper/main/docker-compose.yml`
+`wget --no-check-certificate https://raw.githubusercontent.com/bzh1371462781/docker5/main/docker-compose.yml`
 
 3.编辑配置`docker-compose.yml`将需要字段自行填写替换完整,需要多容器的可以多复制一条 service 出来
 
