@@ -1,8 +1,8 @@
-FROM node:lts-alpine
-LABEL maintainer="1371462781 <imclamp@foxmail.com>"
-ARG ASM_SCRIPTS_URL=https://github.com.cnpmjs.org/bzh1371462781/docker6
+ROM node:lts-alpine
+LABEL maintainer="clamp <imclamp@foxmail.com>"
+ARG ASM_SCRIPTS_URL=https://github.com/bzh1371462781/docker6
 ARG ASM_SCRIPTS_BRANCH=main
-ARG ASM_WRAPPER_URL=https://github.com.cnpmjs.org/bzh1371462781/docker5
+ARG ASM_WRAPPER_URL=https://github.com/bzh1371462781/docker5
 ARG ASM_WRAPPER_BRANCH=main
 ARG enable_unicom=true
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
@@ -42,4 +42,3 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
     && chmod 777 /entrypoint.sh
 
 WORKDIR ${ASM_DIR}
-ENTRYPOINT /entrypoint.sh  
